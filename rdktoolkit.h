@@ -1,5 +1,11 @@
 /*==============================================*/
 /* Copyright (c)  2012-2019  NextMove Software  */
+/*                                              */
+/* This file is part of molhash.                */
+/*                                              */
+/* The contents are covered by the terms of the */
+/* BSD license, which is included in the file   */
+/* license.txt.                                 */
 /*==============================================*/
 #ifndef NMS_RDKTOOLKIT_H
 #define NMS_RDKTOOLKIT_H
