@@ -119,8 +119,12 @@ else()
                                        maeparser_static
                                        maeparser
                                  HINTS ${RDKIT_LIBRARY_DIR} NO_DEFAULT_PATH)
+      find_library(DATASTRUCTS_LIB NAMES RDKitDataStructs_static
+                                         RDKitDataStructs
+                                 HINTS ${RDKIT_LIBRARY_DIR} NO_DEFAULT_PATH)
       set (RDKIT_LIBRARIES ${RDKIT_FILEPARSERS_LIB} ${SMILESPARSE_LIB}
         ${DEPICTOR_LIB} ${SUBSTRUCTMATCH_LIB} ${GRAPHMOL_LIB}
+        ${DATASTRUCTS_LIB}
         ${RDGEOMETRYLIB_LIB} ${RDGENERAL_LIB})
       if(COORDGEN_LIB AND MAEPARSER_LIB)
         set(RDKIT_LIBRARIES ${RDKIT_LIBRARIES} ${COORDGEN_LIB} ${MAEPARSER_LIB})
