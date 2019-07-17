@@ -65,6 +65,8 @@ static void ProcessMolecule(NMS_pMOL mol, FILE *fp)
       }
     }
     ProcessComponent(NMS_MOL_TO_pMOL(*vmol[largest]), fp);
+    for (unsigned int i = 0; i < vmol.size(); ++i)
+      delete vmol[i];
   }
 }
 
@@ -130,6 +132,7 @@ static void ProcessFile(FILE *ifp, FILE *ofp)
       for (unsigned int i=0; i<normidx; ++i)
         Strip(pmol, normalizations[i]);
       ProcessMolecule(pmol, ofp);
+      delete mol;
     }
   }
 }
