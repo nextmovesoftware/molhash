@@ -166,6 +166,7 @@ void DisplayHashOptions()
   fprintf(stderr, "    -e   element graph\n");
   fprintf(stderr, "    -s   canonical smiles\n");
   fprintf(stderr, "    -m   Murcko scaffold\n");
+  fprintf(stderr, "    -em  Extended Murcko scaffold\n");
   fprintf(stderr, "    -mf  molecular formula\n");
   fprintf(stderr, "    -ab  atom and bond counts\n");
   fprintf(stderr, "    -dv  degree vector\n");
